@@ -6,10 +6,10 @@ function TodayAdd() {
         <View style={styles.container}>
             <View style={styles.select}>
                 <Text>
-                    수입
+                    수입 !
                 </Text>
                 <Text>
-                    지출
+                    지출 !
                 </Text>
             </View>
         </View>
