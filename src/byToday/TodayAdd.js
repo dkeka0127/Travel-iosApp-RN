@@ -4,6 +4,14 @@ import { View, Text, StyleSheet } from 'react-native';
 function TodayAdd() {
     return (
         <View style={styles.container}>
+            <View style={styles.select}>
+                <Text>
+                    수입
+                </Text>
+                <Text>
+                    지출
+                </Text>
+            </View>
             <Text>
                 This is Add Page !!
             </Text>
@@ -16,9 +24,14 @@ function TodayAdd() {
 
 const styles = StyleSheet.create({
     container: {
-        alignItems: 'center',
-        justifyContent: 'center'
+        flex: 1,
+        // alignItems: 'center',
+        // justifyContent: 'center'
     },
+    select: {
+        height: 100,
+        backgroundColor: 'pink'
+    }
 });
 
 export default TodayAdd;
