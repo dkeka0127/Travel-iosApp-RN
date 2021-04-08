@@ -12,12 +12,6 @@ function TodayAdd() {
                     지출
                 </Text>
             </View>
-            <Text>
-                This is Add Page !!
-            </Text>
-            <Text>
-                Add your Expense 
-            </Text>
         </View>
     );
 }
