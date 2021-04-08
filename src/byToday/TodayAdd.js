@@ -7,6 +7,9 @@ function TodayAdd() {
             <Text>
                 This is Add Page !!
             </Text>
+            <Text>
+                Add your Expense 
+            </Text>
         </View>
     );
 }
