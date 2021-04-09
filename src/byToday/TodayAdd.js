@@ -1,16 +1,22 @@
+import { NavigationContainer } from '@react-navigation/native';
 import * as React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, Button, StyleSheet } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 
-function TodayAdd() {
+function TodayAdd({navigation}) {
     return (
         <View style={styles.container}>
             <View style={styles.select}>
-                <Text>
-                    수입 !
-                </Text>
-                <Text>
-                    지출 !
-                </Text>
+                <Button title='수입' onPress={()=>{navigation.setOptions({title: '수입'})}} />
+                <Button title='지출' onPress={()=>{navigation.setOptions({title: '지출'})}} />
+            </View>
+            <View style={styles.information}>
+                
+            </View>
+            <View style={styles.confirm}>
+                <TouchableOpacity>
+                    <Text>Save</Text>
+                </TouchableOpacity>
             </View>
         </View>
     );
@@ -25,6 +31,14 @@ const styles = StyleSheet.create({
     select: {
         height: 100,
         backgroundColor: 'pink'
+    },
+    information: {
+        height: 300,
+        backgroundColor: 'green'
+    },
+    confirm: {
+        height: 100,
+        backgroundColor: 'yellow'
     }
 });
 
