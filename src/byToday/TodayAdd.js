@@ -42,7 +42,7 @@ function TodayAdd({navigation}) {
                 page === 'first' ? <Income /> : <Outlay />
             }
             <View style={styles.confirm}>
-                <TouchableOpacity style={styles.selectButton} >
+                <TouchableOpacity style={styles.saveButton} >
                     <Text style={styles.selectText}>Save</Text>
                 </TouchableOpacity>
             </View>
@@ -59,18 +59,26 @@ const styles = StyleSheet.create({
     },
     select: {
         paddingTop: 30,
-        paddingBottom: 15,
+        paddingBottom: 30,
         backgroundColor: '#fff',
         flexDirection: 'row',
         justifyContent: 'center'
     },
     selectButton: {
-        marginRight: '20%',
-        marginLeft: '20%',
+        width: 130,
+        marginRight: 20,
+        marginLeft: 20,
         height: 30,
         borderStyle: 'solid',
-        backgroundColor: 'gray',
-        color: 'white',
+        justifyContent: 'center',
+        borderRadius: 5,
+        backgroundColor: '#d3eaff',
+    },
+    saveButton: {
+        marginRight: '25%',
+        marginLeft: '25%',
+        height: 30,
+        borderStyle: 'solid',
         justifyContent: 'center',
         borderRadius: 5,
         backgroundColor: '#d3eaff',
