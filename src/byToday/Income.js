@@ -8,8 +8,8 @@ function Income() {
                 <Text style={styles.title}>날짜</Text>
                 <TextInput
                     style={styles.input}
-                    placeholder="Add an item!"
-                    placeholderTextColor={'#999'}
+                    placeholder=" "
+                    // placeholderTextColor={'#999'}
                     autoCorrect={false}
                 />
             </View>
@@ -17,8 +17,8 @@ function Income() {
                 <Text style={styles.title}>자산</Text>
                 <TextInput
                     style={styles.input}
-                    placeholder="Add an item!"
-                    placeholderTextColor={'#999'}
+                    placeholder=" "
+                    // placeholderTextColor={'#999'} 
                     autoCorrect={false}
                 />
             </View>
@@ -26,8 +26,8 @@ function Income() {
                 <Text style={styles.title}>분류</Text>
                 <TextInput
                     style={styles.input}
-                    placeholder="Add an item!"
-                    placeholderTextColor={'#999'}
+                    placeholder=" "
+                    // placeholderTextColor={'#999'}
                     autoCorrect={false}
                 />
             </View>
@@ -35,8 +35,8 @@ function Income() {
                 <Text style={styles.title}>금액</Text>
                 <TextInput
                     style={styles.input}
-                    placeholder="Add an item!"
-                    placeholderTextColor={'#999'}
+                    placeholder=" "
+                    // placeholderTextColor={'#999'}
                     autoCorrect={false}
                 />
             </View>
@@ -44,8 +44,8 @@ function Income() {
                 <Text style={styles.title}>메모</Text>
                 <TextInput
                     style={styles.input}
-                    placeholder="Add an item!"
-                    placeholderTextColor={'#999'}
+                    placeholder=" "
+                    // placeholderTextColor={'#999'}
                     autoCorrect={false}
                 />
             </View>
@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
         height: 50,
         alignItems: 'center',
         flexDirection: 'row',
-        backgroundColor: '#eedeee'
+        backgroundColor: '#fff',
     },
     title: {
         width: '20%',
@@ -76,7 +76,7 @@ const styles = StyleSheet.create({
         paddingTop: 10,
         paddingBottom: 10,
         borderBottomWidth: 1,
-        borderBottomColor: 'gray',
+        borderBottomColor: '#aaa',
     }
 });
 
