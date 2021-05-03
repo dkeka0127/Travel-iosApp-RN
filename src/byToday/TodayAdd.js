@@ -7,9 +7,6 @@ import Income from './Income';
 import Outlay from './Outlay';
 
 
-function showPage() {
-
-}
 function TodayAdd({navigation}) {
 
     const [page, setPage] = useState('second');

@@ -9,6 +9,8 @@ import TodayAdd from './src/byToday/TodayAdd';
 import TravelPage from './src/byTravel/Travel';
 import CalenderPage from './src/byCalender/Calender';
 import StatementPage from './src/byStatement/Statement';
+// n빵 - 더치페이 기능
+// 룰렛, 사다리타기
 
 
 const Tab = createBottomTabNavigator();
