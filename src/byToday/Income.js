@@ -23,7 +23,7 @@ function Income() {
                         ...data, 
                         date: input
                     })}
-                    placeholder=" "T
+                    placeholder=" "
                     // placeholderTextColor={'#999'}
                     autoCorrect={false}
                 />
