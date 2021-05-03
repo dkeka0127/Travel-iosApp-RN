@@ -5,15 +5,17 @@ import {createStackNavigator} from '@react-navigation/stack';
 //Page
 import Header from '../component/Header';
 import PlusButton from '../component/PlusButton';
+import TodayHome from './TodayHome';
 
 
 function Today({navigation}) {
     return (   
         <View style={styles.container}>
             <View style={styles.content}>
-                <Text>
+                {/* <Text>
                     Today List - 
-                </Text>
+                </Text> */}
+                <TodayHome />
             </View>
             {/* TodayPage에서 TodayAdd로 이동하니까 'navigation'을 넘겨주어야 함 / movedPage={'이동할 페이지'} 값 전달 */}
             <PlusButton navigation={navigation} movedPage={'TodayAdd'} />
@@ -30,8 +32,8 @@ const styles = StyleSheet.create({
         flex: 1,
         color: 'white',
         backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
+        // alignItems: 'center',
+        // justifyContent: 'center',
         // backgroundColor: 'gray',
     },
 });

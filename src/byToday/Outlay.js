@@ -66,6 +66,11 @@ function OutLay() {
                     autoCorrect={false}
                 />
             </View>
+            <View style={styles.items}>
+                <Text style={styles.title}>사진</Text>
+                <TextInput
+                />
+            </View>
         </View>
     );
 }

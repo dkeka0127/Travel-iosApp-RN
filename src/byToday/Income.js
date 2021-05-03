@@ -1,14 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { View, Text, Button, TextInput, StyleSheet } from 'react-native';
 
 function Income() {
+    const [data, setData] = useState({
+        date: '',
+        selection: '',
+        purpose: '',
+        price: 0,
+        memo: '',
+    });
+    // const {memo, date} = data;
+
     return (
         <View style={styles.container}>
             <View style={styles.items}>
                 <Text style={styles.title}>날짜</Text>
                 <TextInput
                     style={styles.input}
-                    placeholder=" "
+                    // 값 저장
+                    value={data}
+                    onChangeText = {input => setData({
+                        ...data, 
+                        date: input
+                    })}
+                    placeholder=" "T
                     // placeholderTextColor={'#999'}
                     autoCorrect={false}
                 />
@@ -17,6 +32,12 @@ function Income() {
                 <Text style={styles.title}>자산</Text>
                 <TextInput
                     style={styles.input}
+                    // 값 저장
+                    value={data}
+                    onChangeText = {input => setData({
+                        ...data, 
+                        selection: input
+                    })}
                     placeholder=" "
                     // placeholderTextColor={'#999'} 
                     autoCorrect={false}
@@ -26,6 +47,12 @@ function Income() {
                 <Text style={styles.title}>분류</Text>
                 <TextInput
                     style={styles.input}
+                    // 값 저장
+                    value={data}
+                    onChangeText = {input => setData({
+                        ...data, 
+                        purpose: input
+                    })}
                     placeholder=" "
                     // placeholderTextColor={'#999'}
                     autoCorrect={false}
@@ -35,6 +62,12 @@ function Income() {
                 <Text style={styles.title}>금액</Text>
                 <TextInput
                     style={styles.input}
+                    // 값 저장
+                    value={data}
+                    onChangeText = {input => setData({
+                        ...data, 
+                        price: input
+                    })}
                     placeholder=" "
                     // placeholderTextColor={'#999'}
                     autoCorrect={false}
@@ -44,10 +77,23 @@ function Income() {
                 <Text style={styles.title}>메모</Text>
                 <TextInput
                     style={styles.input}
+                    // 값 저장
+                    value={data}
+                    onChangeText = {input => setData({
+                        ...data, 
+                        memo: input
+                    })}
                     placeholder=" "
                     // placeholderTextColor={'#999'}
                     autoCorrect={false}
                 />
+            </View>
+            <View>
+                <Text>날짜 : {data.date}</Text>
+                <Text>자산 : {data.selection}</Text>
+                <Text>분류 : {data.purpose}</Text>
+                <Text>금액 : {data.price}</Text>
+                <Text>메모 : {data.memo}</Text>
             </View>
         </View>
     );
