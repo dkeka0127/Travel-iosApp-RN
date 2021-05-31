@@ -12,12 +12,9 @@ function Today({navigation}) {
     return (   
         <View style={styles.container}>
             <View style={styles.content}>
-                {/* <Text>
-                    Today List - 
-                </Text> */}
                 <TodayHome />
             </View>
-            {/* TodayPage에서 TodayAdd로 이동하니까 'navigation'을 넘겨주어야 함 / movedPage={'이동할 페이지'} 값 전달 */}
+            {/* Today에서 TodayAdd로 이동하니까 'navigation'을 넘겨주어야 함 / movedPage={'이동할 페이지'} 값 전달 */}
             <PlusButton navigation={navigation} movedPage={'TodayAdd'} />
         </View>
     );
