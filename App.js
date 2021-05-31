@@ -7,6 +7,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import TodayPage from './src/byToday/Today';
 import TodayAdd from './src/byToday/TodayAdd';
 import TravelPage from './src/byTravel/Travel';
+import TravelAdd from './src/byTravel/TravelAdd';
 import CalenderPage from './src/byCalender/Calender';
 import StatementPage from './src/byStatement/Statement';
 // n빵 - 더치페이 기능
@@ -72,6 +73,7 @@ function App() {
       >
         <Stack.Screen name="T-Money" component={HomeTabs} />
         <Stack.Screen name="TodayAdd" component={TodayAdd} options={{title: '입출금', headerBackTitle: ' '}} />
+        <Stack.Screen name="TravelAdd" component={TravelAdd} />
       </Stack.Navigator>
     </NavigationContainer>
   );
