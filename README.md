@@ -6,7 +6,7 @@
 - JavaScript
 - React-Native
 - bottom-navigator
-- tab-navigator
+- stack-navigator
 - Styleld-component
 
 
