@@ -4,10 +4,11 @@
 
 ## 기술 스택
 - JavaScript
+- JSX
 - React-Native
 - bottom-navigator
 - stack-navigator
-- Styleld-component
+- StyleSheet
 
 
 ## 프로젝트 실행화면
