@@ -8,7 +8,7 @@ function TravelHome() {
             startDate: '0127',
             endDate: '0128',
             location: '강원도 속초',
-            title: '경은이랑 속초',
+            title: '은이랑 속초',
         },
         {
             startDate: '0505',
@@ -41,7 +41,7 @@ function TravelHome() {
             {
                 data.map((i, index) => {
                     return (
-                        <View style={styles.content}>
+                        <View style={styles.content} key={index}>
                             <Text style={{fontSize: 17, fontWeight: '500'}}>{i.title}</Text>
                             <Text></Text>
                             <Text style={{fontWeight: '300'}}>⚲ {i.location}</Text>
@@ -57,13 +57,14 @@ function TravelHome() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        margin: 10,
         flexDirection: 'row',
         flexWrap: 'wrap',
         // justifyContent: 'center'
     },
     content: {
-        width: '40%',
-        margin: '5%',
+        width: '42%',
+        margin: '4%',
         padding: 10,
         borderRadius: 8,
         // borderColor: 'lightsteelblue',
