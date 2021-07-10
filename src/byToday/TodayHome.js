@@ -8,6 +8,7 @@ function TodayHome() {
 
     let [data, setData] = useState([
     {
+        travelNum : 0,
         date: '0127',
         selection: '카드',
         purpose: 'eat',
@@ -16,6 +17,7 @@ function TodayHome() {
         InOut: 0,
     },
     {
+        travelNum : 0,
         date: '0903',
         selection: '현금',
         purpose: 'hotel',
@@ -24,6 +26,7 @@ function TodayHome() {
         InOut: 0,
     },
     {
+        travelNum : 0,
         date: '1126',
         selection: '카드',
         purpose: 'mama',
@@ -32,6 +35,7 @@ function TodayHome() {
         InOut: 1,
     },
     {
+        travelNum : 0,
         date: '0527',
         selection: '현금',
         purpose: 'papa',
@@ -40,6 +44,7 @@ function TodayHome() {
         InOut: 1,
     },
     {
+        travelNum : 0,
         date: '0102',
         selection: '현금',
         purpose: 'present',
