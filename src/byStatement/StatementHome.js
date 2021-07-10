@@ -1,8 +1,10 @@
 // pie-chart doc
-// https://openbase.com/js/react-native-pie-chart
+// https://github.com/react-native-art/art
 
 import React, {useState} from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import {Surface, Shape} from '@react-native-community/art';
+
 
 function StatementHome() {
     
@@ -60,7 +62,7 @@ function StatementHome() {
                     let category4 = Math.round((i.category4/categoryAll)*100);
                     let category5 = Math.round((i.category5/categoryAll)*100);
                     return (
-                        <View style={styles.card}>
+                        <View style={styles.card} key={index}>
                         <Text> TraveNum : {i.travelNum} </Text>
                         <Text></Text>
                         <Text>{categoryAll} -- </Text>
@@ -99,4 +101,26 @@ const styles = StyleSheet.create({
     }
 })
 
+const piechart = StyleSheet.create({
+    container: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'space-around',
+    },
+    gauge: {
+      position: 'absolute',
+      width: 100,
+      height: 100,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    gaugeText: {
+      backgroundColor: 'transparent',
+      color: '#000',
+      fontSize: 24,
+    },
+  })
+
 export default StatementHome;
+
+
