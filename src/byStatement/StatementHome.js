@@ -3,7 +3,7 @@
 
 import React, {useState} from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import {Surface, Shape} from '@react-native-community/art';
+import {Surface, Shape, Path} from '@react-native-community/art';
 
 
 function StatementHome() {
@@ -64,15 +64,15 @@ function StatementHome() {
                     return (
                         <View style={styles.card} key={index}>
                         <Text> TraveNum : {i.travelNum} </Text>
-                        <Text></Text>
+                            <Text></Text>
                         <Text>{categoryAll} -- </Text>
-
-                            <Text>{category1}%</Text>
-                            <Text>{category2}%</Text>
-                            <Text>{category3}%</Text>
-                            <Text>{category4}%</Text>
-                            <Text>{category5}%</Text>
-
+                        <View style={styles.graphes}>
+                            <Text style={{width:'20%', color:'red'}}>{category1}%</Text>
+                            <Text style={{width:'20%', color:'orange'}}>{category2}%</Text>
+                            <Text style={{width:'20%', color:'green'}}>{category3}%</Text>
+                            <Text style={{width:'20%', color:'blue'}}>{category4}%</Text>
+                            <Text style={{width:'20%', color:'purple'}}>{category5}%</Text>
+                        </View>
                         <Text>{category1 + category2 + category3 + category4 + category5} -- </Text>
                         </View>
                     );
@@ -98,28 +98,16 @@ const styles = StyleSheet.create({
         margin: '4%',
         padding: 15,
         backgroundColor: 'pink'
+    },
+    graphes: {
+        flexDirection: 'row',
+        flexWrap: 'wrap',
+        backgroundColor: 'white'
+    },
+    graph: {
+        width: '15%'
     }
 })
-
-const piechart = StyleSheet.create({
-    container: {
-      flex: 1,
-      alignItems: 'center',
-      justifyContent: 'space-around',
-    },
-    gauge: {
-      position: 'absolute',
-      width: 100,
-      height: 100,
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    gaugeText: {
-      backgroundColor: 'transparent',
-      color: '#000',
-      fontSize: 24,
-    },
-  })
 
 export default StatementHome;
 

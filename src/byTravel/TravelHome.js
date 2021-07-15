@@ -33,7 +33,7 @@ function TravelHome() {
             endDate: '1126',
             location: '전라남도 여수',
             title: '여수밤바다 접선', 
-        }
+        },
     ]);
 
     return(
