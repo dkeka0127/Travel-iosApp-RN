@@ -1,6 +1,8 @@
 // pie-chart doc
 // https://github.com/react-native-art/art
 // <Image> 태그 사용 시 내부에 source={require('../img/red.png')} 꼭 넣어주어야 함
+// flexDirection: 'row' - 그래프 가로 정렬
+// flexWrap: 'wrap' - 그래프 아래부터 위로 높아지게 함 (flexDirection과 같이 써야함)
 
 import React, {useState} from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
@@ -36,12 +38,12 @@ function StatementHome() {
             category5 : 3,
         },
         {
-            travelNum : 3,
-            category1 : 3,
+            travelNum : 2,
+            category1 : 1,
             category2 : 3,
-            category3 : 4,
+            category3 : 1,
             category4 : 7,
-            category5 : 2,
+            category5 : 9,
         },
         {
             travelNum : 4,
@@ -74,11 +76,11 @@ function StatementHome() {
                         <Text style={styles.graphNameText}>P</Text>
                         </View>
                         <View style={styles.graphes}>
-                            <Image style={{width:'16%', marginLeft: '2%', marginRight: '2%', height: category1, direction: 'ltr'}} source={require('../img/red.png')} />
-                            <Image style={{width:'16%', marginLeft: '2%', marginRight: '2%', height: category2, }} source={require('../img/orange.png')} />
-                            <Image style={{width:'16%', marginLeft: '2%', marginRight: '2%', height: category3, }} source={require('../img/green.png')} />
-                            <Image style={{width:'16%', marginLeft: '2%', marginRight: '2%', height: category4, }} source={require('../img/blue.png')} />
-                            <Image style={{width:'16%', marginLeft: '2%', marginRight: '2%', height: category5, }} source={require('../img/purple.png')} />
+                            <Image style={{width:'16%', marginLeft: '2%', marginRight: '2%', height: category1}} source={require('../img/red.png')} />
+                            <Image style={{width:'16%', marginLeft: '2%', marginRight: '2%', height: category2}} source={require('../img/orange.png')} />
+                            <Image style={{width:'16%', marginLeft: '2%', marginRight: '2%', height: category3}} source={require('../img/green.png')} />
+                            <Image style={{width:'16%', marginLeft: '2%', marginRight: '2%', height: category4}} source={require('../img/blue.png')} />
+                            <Image style={{width:'16%', marginLeft: '2%', marginRight: '2%', height: category5}} source={require('../img/purple.png')} />
                         </View>
                         {/* <Text>{category1 + category2 + category3 + category4 + category5} -- </Text> */}
                         </View>
@@ -104,7 +106,10 @@ const styles = StyleSheet.create({
         width: '42%',
         margin: '4%',
         padding: 15,
-        backgroundColor: 'pink'
+        // backgroundColor: 'pink'
+        borderColor: '#b2d8f4',
+        borderWidth: 1.5,
+        borderRadius: 8
     },
     graphNameView: {
         flexDirection: 'row',
@@ -119,10 +124,11 @@ const styles = StyleSheet.create({
     },
     graphes: {
         flexDirection: 'row',
-        flexWrap: 'wrap',
+        // flexWrap: 'wrap',
+        alignItems: 'flex-end',
         backgroundColor: 'white',
         width: '100%',
-        height: 100,
+        height: 80,
     },
     graph: {
         width: '15%'
