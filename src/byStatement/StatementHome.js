@@ -67,7 +67,7 @@ function StatementHome() {
                     let category5 = Math.round((i.category5/categoryAll)*100);
                     return (
                         <View style={styles.card} key={index}>
-                        <Text> TraveNum : {i.travelNum} </Text>
+                        <Text> TravelNum : {i.travelNum} </Text>
                         <View style={styles.graphNameView}>
                         <Text style={styles.graphNameText}>R</Text>
                         <Text style={styles.graphNameText}>O</Text>
